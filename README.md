@@ -20,9 +20,6 @@ A complete **stock trading web platform** inspired by Zerodha and built using th
 ## 📦 Installation & Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/stock-trading-platform.git
-
 # Install client and server dependencies
 npm install
 
