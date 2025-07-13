@@ -2,27 +2,38 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-6">
-          <img src="media/images/education.svg" style={{ width: "70%" }} />
-        </div>
-        <div className="col-6">
-          <h1 className="mb-3 fs-2">Free and open market education</h1>
-          <p>
-            Varsity, the largest online stock market education book in the world
-            covering everything from the basics to advanced trading.
-          </p>
-          <a href="" style={{ textDecoration: "none" }}>
-            Versity <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </a>
-          <p className="mt-5">
-            TradingQ&A, the most active trading and investment community in
-            India for all your market related queries.
-          </p>
-          <a href="" style={{ textDecoration: "none" }}>
-            TradingQ&A <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </a>
+    <div className="container-fluid bg-light py-5">
+      <div className="container py-5">
+        <div className="row align-items-center">
+
+         
+          <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <img
+              src="media/images/education.svg"
+              alt="Education"
+              className="img-fluid"
+              style={{ maxWidth: "80%", objectFit: "contain" }}
+            />
+          </div>
+
+          
+          <div className="col-12 col-md-6">
+            <h2 className="fw-bold mb-3">Learn Stock Markets for Free</h2>
+            <p className="text-muted">
+              Introducing <strong>Inphinity Learn</strong> is our free, self-paced learning platform to master the world of trading and investing. From beginner basics to advanced strategies, we’ve got you covered.
+            </p>
+            <a href="#" className="text-decoration-none text-primary fw-semibold">
+              Start Learning <i className="ri-arrow-right-up-line"></i>
+            </a>
+
+            <p className="mt-5 text-muted">
+              Join our <strong>Inphinity Community</strong> — India’s most curious trading tribe. Ask questions, share insights, and grow together.
+            </p>
+            <a href="#" className="text-decoration-none text-primary fw-semibold">
+              Visit Community <i className="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>

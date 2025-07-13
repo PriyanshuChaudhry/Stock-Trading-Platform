@@ -2,44 +2,62 @@ import React from "react";
 
 function Stats() {
   return (
-    <div className="container p-3">
-      <div className="row p-5">
-        <div className="col-6 p-5">
-          <h1 className="fs-2 mb-5">Trust with confidence</h1>
-          <h2 className="fs-4">Customer-first always</h2>
-          <p className="text-muted">
-            That's why 1.3+ crore customers trust Zerodha with ₹3.5+ lakh crores
-            worth of equity investments.
-          </p>
-          <h2 className="fs-4">No spam or gimmicks</h2>
-          <p className="text-muted">
-            No gimmicks, spam, "gamification", or annoying push notifications.
-            High quality apps that you use at your pace, the way you like.
-          </p>
-          <h2 className="fs-4">The Zerodha universe</h2>
-          <p className="text-muted">
-            Not just an app, but a whole ecosystem. Our investments in 30+
-            fintech startups offer you tailored services specific to your needs.
-          </p>
-          <h2 className="fs-4">Do better with money</h2>
-          <p className="text-muted">
-            With initiatives like Nudge and Kill Switch, we don't just
-            facilitate transactions, but actively help you do better with your
-            money.
-          </p>
-        </div>
-        <div className="col-6 p-5">
-          <img src="media/images/ecosystem.png" style={{ width: "90%" }} />
-          <div className="text-center">
-            <a href="" className="mx-5" style={{ textDecoration: "none" }}>
-              Explore our products{" "}
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
-            <a href="" style={{ textDecoration: "none" }}>
-              Try Kite demo{" "}
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
+    <div className="container-fluid bg-light py-5">
+      <div className="container">
+        <div className="row d-flex flex-column-reverse flex-lg-row align-items-center">
+
+          
+          <div className="col-12 col-lg-6 py-4 px-3 px-lg-5">
+            <h2 className="fw-bold mb-4">Your Trust, Our Responsibility</h2>
+
+            <div className="mb-4">
+              <h4 className="fs-5 fw-semibold">Built for Everyday Investors</h4>
+              <p className="text-muted mb-0">
+                Inphinity Stocks is trusted by thousands across India for seamless, secure, and smart investing. No matter your experience level.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h4 className="fs-5 fw-semibold">No Clutter. Just Clarity.</h4>
+              <p className="text-muted mb-0">
+                No spam. No noise. Just real time tools and insights to help you invest with confidence.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h4 className="fs-5 fw-semibold">All-in-One Stock Ecosystem</h4>
+              <p className="text-muted mb-0">
+                From IPOs to Mutual Funds to Derivatives, access every financial product under one sleek platform, fully integrated.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="fs-5 fw-semibold">Smarter Features. Better Results.</h4>
+              <p className="text-muted mb-0">
+                With intelligent alerts, automated insights, and precision tools. We help you trade smarter, not harder.
+              </p>
+            </div>
           </div>
+
+         
+          <div className="col-12 col-lg-6 text-center py-4 px-3 px-lg-5">
+            <img
+              src="media/images/ecosystem.png"
+              alt="Inphinity Stocks Ecosystem"
+              className="img-fluid"
+              style={{ maxWidth: "90%", borderRadius: "100px"}}
+            />
+
+            <div className="mt-4">
+              <a href="#" className="me-4 text-decoration-none text-primary fw-semibold">
+                Explore Inphinity Tools <i class="ri-arrow-right-up-line"></i>
+              </a>
+              <a href="#" className="text-decoration-none text-primary fw-semibold">
+                Try Demo <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

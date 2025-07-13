@@ -1,0 +1,15 @@
+{
+  "short_name": "Inphinity Stocks",
+  "name": "Inphinity Stocks: Stock Trading Web App",
+  "icons": [
+    {
+      "src": "favicon2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

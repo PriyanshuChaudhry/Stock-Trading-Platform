@@ -3,52 +3,54 @@ import React from "react";
 function Hero() {
   return (
     <div className="container">
-      <div className="row p-5 mt-5 mb-5">
-        <h1 className="fs-2 text-center">
-          We pioneered the discount broking model in India
-          <br />
-          Now, we are breaking ground with our technology.
-        </h1>
+     
+      <div className="row py-5 mt-5 mb-4 text-center">
+        <div className="col">
+          <h1 className="fs-2">
+           <strong>Redefining Stock Trading in India.</strong><br></br>
+            Inphinity Stocks is not just a platform, it's a movement towards smarter, faster, and more transparent investing.
+          </h1>
+          
+        </div>
       </div>
 
+     
       <div
-        className="row p-5 mt-5 border-top text-muted"
-        style={{ lineHeight: "1.8", fontSize: "1.2em" }}
+        className="row border-top py-5 text-muted"
+        style={{ lineHeight: "1.8", fontSize: "1.1em" }}
       >
-        <div className="col-6 p-5">
+        
+        <div className="col-md-6 mb-4 mb-md-0 px-4">
           <p>
-            We kick-started operations on the 15th of August, 2010 with the goal
-            of breaking all barriers that traders and investors face in India in
-            terms of cost, support, and technology. We named the company
-            Zerodha, a combination of Zero and "Rodha", the Sanskrit word for
-            barrier.
+            Founded in 2025, Inphinity Stocks was built with one mission in mind:
+            to eliminate complexity and high costs from retail trading. We focus
+            on user first design, robust tools, and absolute pricing clarity.
           </p>
           <p>
-            Today, our disruptive pricing models and in-house technology have
-            made us the biggest stock broker in India.
+            Today, we serve thousands of traders across India with powerful
+            features, zero-commission delivery, and a suite of modern investing
+            products, all in one place.
           </p>
           <p>
-            Over 1+ Crore clients place millions of orders every day through our
-            powerful ecosystem of investment platforms, contributing over 15% of
-            all Indian retail trading volumes.
+            With every trade placed through our platform, we get closer to our
+            vision of a financially literate and empowered India.
           </p>
         </div>
-        <div className="col-6 p-5">
+
+        
+        <div className="col-md-6 px-4">
           <p>
-            In addition, we run a number of popular open online educational and
-            community initiatives to empower retail traders and investors.
+            Beyond trading, we are deeply invested in educating the next
+            generation of investors. Our learning modules, blog articles, and community forums make learning accessible to all.
           </p>
           <p>
-            <a href="" style={{ textDecoration: "none" }}>
-              Rainmatter
-            </a>
-            , our fintech fund and incubator, has invested in several fintech
-            startups with the goal of growing the Indian capital markets.
+            Our fintech initiatives aim to support rising startups and
+            innovation in capital markets. We're proud of our commitment to
+            transparency, technology, and trust.
           </p>
           <p>
-            And yet, we are always up to something new every day. Catch up on
-            the latest updates on our blog or see what the media is saying about
-            us.
+            Want to stay updated? Follow us on our official channels and see
+            how we’re reshaping the future of investing, one update at a time.
           </p>
         </div>
       </div>

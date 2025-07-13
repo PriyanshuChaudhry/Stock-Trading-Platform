@@ -1,60 +1,62 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav
-      class="navbar navbar-expand-lg border-bottom"
-      style={{ backgroundColor: "#FFF" }}
-    >
-      <div class="container p-2">
-        <a class="navbar-brand" href="#">
+    <nav className="navbar bg-white navbar-expand-lg sticky-top shadow-sm" style={{ zIndex: 1030 }}>
+      <div className="container d-flex align-items-center justify-content-between py-1">
+        
+        <NavLink className="navbar-brand d-flex align-items-center justify-content-center mb-0" to="/" style={{ whiteSpace: "nowrap" }}>
           <img
-            src="media/images/logo.svg"
-            style={{ width: "25%" }}
-            alt="Logo"
+            src="media/images/favicon.png"
+            alt="Inphinity Stocks"
+            style={{
+              height: "45px",
+              width: "auto",
+              objectFit: "contain"
+            }}
           />
-        </a>
+          <h2 className="fw-bold fs-3">
+            <strong>Inphinity</strong> <span style={{ color: "rgb(43 83 147)" }}>Stocks</span>
+          </h2>
+        </NavLink>
+
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
-            <ul class="navbar-nav mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Signup
-                </a>
+
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul className="navbar-nav align-items-center text-center mt-3 mt-lg-0">
+            {[
+              { name: "Home", path: "/" },
+              { name: "Sign Up", path: "/signup" },
+              { name: "About", path: "/about" },
+              { name: "Product", path: "/products" },
+              { name: "Pricing", path: "/pricing" },
+              { name: "Support", path: "/support" },
+            ].map((item, idx) => (
+              <li key={idx} className="nav-item px-2">
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link fw-semibold text-primary"
+                      : "nav-link fw-semibold text-dark"
+                  }
+                >
+                  {item.name}
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Product
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Support
-                </a>
-              </li>
-            </ul>
-          </form>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
